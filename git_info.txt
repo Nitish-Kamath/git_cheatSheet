@@ -1,0 +1,67 @@
+GIT:
+Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development.
+
+GITHUB:
+GitHub is a web-based version-control and collaboration platform for software developers. ... GitHub facilitates social coding by providing a web interface to the Git code repository and management tools for collaboration. GitHub can be thought of as a serious social networking site for software developers.
+
+***we do commiting not for only adding files but for also adding comments***
+git config --global user.name apna naam->it will add your name
+git config --global user.email apna email id->it will add your email id
+git config --global user.name/user.emaiil->you can see user ka naam as well as user ka email id
+
+git init->to initialise the active directory as working directory
+
+git status -> to check the status of the file
+git status -s -> to summarises  the status of the file
+pahla dabba ->staging area; second dabba->working tree
+
+git add file -> to add file to repo
+git add -A -> To add all files to staging area
+
+git commit file ->to commit a particualr file in unmodified stage
+git commit -m  "File is commited" -> to commit all files at once
+
+git checkout file->to restore file content back to commited content
+git checkout -f ->to restore all file content back to commited content
+
+
+git log->to see all the commit(time and message) to your repo
+git log -p -1->to see 1 commit (q-> to quit)
+
+git diff->compare the working tree with staging area
+git diff --staged->to compare staging area with last commit
+
+git commit -a -m->to directly commit the files skipping the staging area
+
+ls->to list out all the files of present directory(unix feature)
+touch file->to create a new file
+
+git rm->remove the file from working directory and from staging area
+git rm --cached->to remove the files from staging area
+
+***you can add files in .gitignore folder to ignore the files ***
+git branch file-> a new branch will be created with name file
+git checkout -b file-> a new branch will be created and you will switched to that :)
+git branch -> we can see all branches here
+git checkout file-> to switch b/w the  branch
+
+***HOW TO MERGE FILES***
+git checkout master->you come to master directory
+git merge file->file will be merged
+
+remote is that URL where we can host our repository
+git remote add origin https://github.com/Nitish-Kamath/git_cheatCode.git ->origin naam ka ek remote add krdo; given url can be accessed by name origin
+
+***Local repositories reside on the computers of team members. In contrast, remote repositories are hosted on a server that is accessible for all team members***
+
+git remote->name of remote
+git remote -v ->gives out url for fetch and push 
+
+git push origin master->push out  the master branch to the location where remote is 
+git push -u origin master->set the default branch to be pushed out is master to origin
+after using above command we can use:-
+git push -> it will send the file to above default location set
+
+git clone url folder->clone the files to given folder
+
+
